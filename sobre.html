@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+
+    <!-- ICONE -->
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        body{background-image: url("img/bg-theme2.png"); background-size: cover; background-repeat: repeat; }
+    </style>
+
+    <!-- JS -->
+    <script type="text/javascript">
+        // Animação da Grid
+        window.onload = Animation;
+        function Animation(){
+            // Animação do titulo
+            document.getElementsByClassName("animated-title")[0].style.transition = "all .5s";
+            document.getElementsByClassName("animated-title")[0].style.opacity = "100%";
+            document.getElementsByClassName("animated-title")[0].style.marginTop = "0em";
+
+            // Animação da Grid
+            document.getElementsByClassName("animated-grid")[0].style.transition = "opacity 1.5s";
+            document.getElementsByClassName("animated-grid")[0].style.opacity = "100%";
+        }
+        
+    </script>
+
+    <!-- FONTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" title="Inicio"><label class="nav-logo"><img src="img/logo.png" alt="">Hex Developers</label></a>
+            <ul align="right" class="nav-menu">
+                <li><a class="active" href="#">Sobre</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container container-sobre" id="sobre">
+        <h2 class="text-md animated-title">
+            Sobre a Hex
+        </h2>
+        <p class="text-sm animated-grid">
+            A Hex surgiu em 2020 no período em que o mundo estava passando por uma pandemia, sendo assim, criada com o intuito de ajudar comércios e empresas que necessitavam de alternativas remotas ou online para seus negócios.<br /><br />
+            Criada por <a href="#"><b>Artur Alves Ribeiro</b></a>, hoje ela atende a todo o Brasil, com inúmeros sistemas rodando pela internet, sempre intuitivos e simples de usar, sendo ainda moderno o bonito, agradável a todos os usuários. <br /><br />
+        </p>
+    </div>
+
+
+</body>
+</html>

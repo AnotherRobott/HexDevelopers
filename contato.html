@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <!-- ICONE -->
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        body{background-image: url("img/bg-theme2.png"); background-size: cover; background-repeat: repeat; }
+    </style>
+
+    <!-- FONTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" title="Inicio"><label class="nav-logo"><img src="img/logo.png" alt="">Hex Developers</label></a>
+            <ul align="right" class="nav-menu">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a class="active" href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container container-contato">
+        <div class="grid">
+            <div class="col">
+                <form action="">
+                    <label for="email">Nome</label><br />
+                    <input type="text" name="nome" id="nome" autocomplete="off"><br />
+
+                    <label for="email">Email</label><br />
+                    <input type="email" name="email" id="email" autocomplete="off"><br />
+
+                    <label for="email">Mensagem</label><br />
+                    <textarea name="mensagem" id="msg" placeholder="Digite aqui sua mensagem para nós!"></textarea> <br />
+
+                    <center><button type="submit">Enviar</button></center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

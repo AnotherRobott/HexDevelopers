@@ -1,0 +1,233 @@
+/*
+
+Esse CSS contém todos os estilos de todas as paginas, sendo eles aqueles idependentes destinados a um objeto
+
+ Confiugurações gerais
+*/
+*{outline:none ;}
+body{background-color: rgb(250, 250, 250);font-family: 'Quicksand', sans-serif; outline-color: transparent;margin: 0; overflow-x: hidden !important;}
+a{color: rgb(134, 134, 134);font-weight: 100 !important;}
+
+
+::-webkit-scrollbar {width: 8px; height: 8px;}
+::-webkit-scrollbar-button {width: 0px; height: 0px;}
+::-webkit-scrollbar-thumb {background: #ececec; border-radius: 50px; padding: .1em; border: 1px solid #ffffff;}
+::-webkit-scrollbar-thumb:hover {background: #dadada;}
+::-webkit-scrollbar-track {background: #00000000; border-radius: 50px;}
+
+/* Nav que contém todo o conteúdo dos menus */
+
+.navbar{
+    margin: 1em;
+    background: white;
+    box-shadow: 0px 20px 10px -20px rgba(231, 231, 231, 0.815);
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.nav-logo{
+    position: absolute;
+    font-size: 20pt;
+    font-weight: 100 !important;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.nav-logo img{
+    max-width: 40px;
+    margin-right: 10px;
+    margin-bottom: -11px;
+    margin-top: -10px;
+}
+
+.nav-menu li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-menu li a{
+    transition: color .1s;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+.nav-menu li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* Corpo da pagina inicial */
+
+#img-saudacoes{
+    max-width: 90% !important;
+}
+.saudacoes button{
+    border: 0;
+    border-radius: 100px;
+    background: rgb(96,255,173);
+    background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(140,255,129,1) 100%);
+    color: rgb(255, 255, 255);
+    padding: .8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.103);
+    box-shadow: 0px 20px 10px -20px rgba(0, 255, 0, 0.671);
+    cursor: pointer;
+    transition: font-size .2s;
+}
+
+.saudacoes button:hover{
+    font-size: 15.5pt;
+}
+
+.saudacoes .text-lg{
+    text-align: justify;
+    position: relative;
+    margin-top: 20%;
+    color: silver;
+    font-weight: 300;
+    opacity: 0%;
+    left: -5em;
+}
+
+
+/* Corpo */
+
+.corpo{
+    margin-top: 200px;
+}
+
+.corpo .text-md{
+    color: grey;
+    margin-left: -5em;
+    opacity: 0%;
+}
+
+.grid-mvv{
+    opacity: 0%;
+    /* display: inline !important; */
+}
+
+.grid-mvv .col{
+    border: solid 1px rgba(96,255,173,1);
+    background: rgb(96,255,173);
+    background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(140,255,129,1) 100%);
+    box-shadow: 0px 20px 10px -20px rgba(0, 255, 0, 0.671);
+    border-radius: 20px;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.grid-mvv .col h3{
+    color: white;
+    text-align: center;
+    font-size: 17pt;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.103);
+}
+
+.grid-mvv .col p{
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
+    text-align: justify;
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* Pagina de sobre */
+.container-sobre{
+    padding: 3em;
+}
+
+.container-sobre .text-md{
+ color: rgb(73, 73, 73);
+ margin-top: 2em;
+}
+
+.container-sobre .text-sm{
+    color: grey;
+    text-align: justify;
+}
+
+.container-sobre .text-sm a{
+    color: grey;
+    text-decoration: none;
+}
+
+.container-sobre .text-sm img{
+    max-width: 300px;
+    border: grey;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+
+
+/* +========================================================+ */
+/* Area da pagina de Contato */
+
+/* .container-contato{
+
+} */
+
+.container-contato label{
+    position: relative;
+    left: 1.5em;
+    top: .7em;
+    font-weight: 600;
+    font-size: 15pt;
+    color: grey;
+}
+
+.container-contato input{
+    border: 0;
+    box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
+    height: 40px;
+    width: 400px;
+    border-radius: 100px;
+    padding-left: 1.5em;
+    font-size: 12pt;
+    margin-bottom: 1em;
+}
+
+.container-contato textarea{
+    border: 0;
+    box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
+    height: 200px;
+    width: 400px;
+    max-width: 400px;
+    border-radius: 30px;
+    padding: 1.5em;
+    font-size: 12pt;
+    margin-bottom: 2em;
+    resize: vertical;
+}
+
+.container-contato textarea{
+    font-family: 'Quicksand', sans-serif;
+    border: 0;
+    box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
+    height: 200px;
+    width: 400px;
+    max-width: 400px;
+    border-radius: 30px;
+    padding: 1.5em;
+    font-size: 12pt;
+    margin-bottom: 2em;
+    resize: vertical;
+}
+
+.container-contato button{
+    border: 0;
+    border-radius: 100px;
+    font-size: 13pt;
+    background: rgb(96,255,173);
+    background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(140,255,129,1) 100%);
+    color: rgb(255, 255, 255);
+    padding: .7em;
+    text-shadow: 2px 2px 4px rgba(58, 58, 58, 0.233);
+    box-shadow: 0px 20px 10px -20px rgba(0, 255, 0, 0.671);
+    cursor: pointer;
+}

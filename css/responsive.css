@@ -1,0 +1,202 @@
+/* 
+
+Esse Css contém predefinições e alterações responsivas das paginas e seus objetos
+
+*/
+
+.fl-r{
+    float: right !important;
+}
+
+.fl-l{
+    float: left !important;
+}
+
+.active{
+    color: #73ff9b;
+    text-shadow: 1px 1px 3px rgba(60, 255, 0, 0.342);
+    transition: color .3s;
+}
+
+.active:hover{
+    color: #63e663 !important;
+}
+
+#fixed{
+    width: 100%;
+    z-index: 100;
+}
+
+.animated-grid{
+    opacity: 0%;
+}
+
+.animated-title{
+    opacity: 0%;
+    margin-top: -5em;
+}
+
+/* Container que comanda o tamanho do conteúdo exibido */
+.container{
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 1020px){
+    .container{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    /* .saudacoes img{display: none;} */
+}
+
+/* GRID */
+
+.grid{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col{
+    min-width: auto;
+    position: relative;
+    max-width: 100%;
+    min-width: 5%;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 1em;
+    margin-right: 1em;
+    /* background: rgb(96,255,173);
+    background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(230,255,123,1) 100%); */
+}
+
+
+
+/* TEXTOS */
+
+.text-sm{
+    font-size: 15pt;
+}
+
+.text-md{
+    font-size: 20pt;
+}
+
+.text-lg{
+    font-size: 30pt;
+}
+
+
+
+@media only screen and (max-width: 1440px){
+
+    .text-sm{
+        font-size: 15pt;
+    }
+
+    .text-md{
+        font-size: 15pt;
+    }
+    
+    .text-lg{
+        font-size: 22pt;
+    }
+
+    /* NAVBAR Ajustes */
+
+    .navbar{
+        max-height: 30px;
+    }
+
+    .navbar ul{
+        margin-top: .25em;
+    }
+
+    .navbar a label{
+        margin-top: -.5em !important;
+        font-size: 13pt;
+        margin-top: 5px;
+    }
+
+    .navbar img{
+        max-width: 32px;
+    }
+
+    .navbar li a{
+        font-size: 13pt;
+    }
+
+    /* Missão visão e valores */
+
+    .grid-mvv .col h3{
+        font-size: 11pt;
+    }
+    
+    .grid-mvv .col p{
+        font-size: 9pt;
+    }
+}
+/* INICIO DA PARTE MOBILE  */
+
+.mobile-nav{
+    display: none;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+.toggler{
+    float: right;
+}
+
+.toggler hr{
+    width: 25px;
+    border:solid 1px white;
+}
+
+@media only screen and (max-width: 768px){
+
+    #fixed{
+        position: fixed !important;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobile-nav{
+        display: block !important;
+    }
+
+    .grid{
+        display: inline-block;
+        float: center;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 572px){
+    #txt-saudacoes{
+        font-size: 14pt;
+    }
+
+    #txt-saudacoes button{
+        font-size: 10pt;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.103);
+        box-shadow: 0px 12px 10px -11px rgba(0, 255, 0, 0.671);
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .nav-menu-toggler{
+        display: block !important;
+    }
+}
