@@ -150,18 +150,14 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
 
 .mobile-nav{
     display: none;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-top: 1em;
+    justify-content: space-between;
 }
 
-.toggler{
-    float: right;
-}
-
-.toggler hr{
-    width: 25px;
-    border:solid 1px white;
+.bi-list{
+    color: #fff;
 }
 
 @media only screen and (max-width: 768px){
@@ -173,7 +169,7 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
         display: none;
     }
     .mobile-nav{
-        display: block !important;
+        display: flex !important;
     }
 
     .grid{
