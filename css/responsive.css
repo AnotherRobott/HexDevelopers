@@ -236,7 +236,7 @@ input:checked ~ .ul-mobile {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 51%);
+    transform: translate(-50%, 30%);
     list-style: none;
     font-size: 30pt;
     opacity: 0;
