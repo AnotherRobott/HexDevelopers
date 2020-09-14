@@ -31,8 +31,8 @@ function AnimatedScroll() {
     }
 
     // Animação de Grid e Title
-
-    if(window.pageYOffset >= document.getElementsByClassName("animated-grid")[0].offsetTop){
+    // alert(document.getElementsByClassName("animated-title")[0].offsetTop);
+    if(window.pageYOffset >= (document.getElementsByClassName("animated-title")[0].offsetTop - 700)){
 
         // Animação do titulo
         document.getElementsByClassName("animated-title")[0].style.transition = "all .5s";

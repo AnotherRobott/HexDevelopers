@@ -185,6 +185,12 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
         flex-wrap: wrap-reverse;
         justify-content: space-around;
     }
+
+    .grid-mvv .col{
+        margin-right: 0em !important;
+        margin-bottom: 0em !important;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 572px){
