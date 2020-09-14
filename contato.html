@@ -19,15 +19,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <a href="index.html" title="Inicio"><label class="nav-logo"><img src="img/logo.png" alt="">Hex Developers</label></a>
-            <ul align="right" class="nav-menu">
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="equipe.html">Equipe</a></li>
-                <li><a class="active" href="#">Contato</a></li>
-            </ul>
-        </nav>
+    <div id="fixed"> 
+        <div class="container" id="container-navbar">
+            <nav class="navbar" id="navbar">
+                <a href="index.html"><label class="nav-logo"><img src="img/logo.png" alt="">Hex Developers</label></a>
+                <ul align="right" class="nav-menu">
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
 
             <!-- Menu Mobile -->
             <nav class="mobile-nav">
@@ -38,14 +39,16 @@
                         <span class='hamburger'></span>
                     </div>
                 </label>
-                <ul" class="ul-mobile">
+                <ul" class="ul-mobile" style="transform: translate(-50%, 30%) !important;">
                     <li><a href="index.html">Home</a></li><br />
                     <li><a href="sobre.html">Sobre</a></li><br />
                     <li><a href="equipe.html">Equipe</a></li><br />
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
+        </div>
     </div>
+    <br><br><br><br>
 
     <div class="container container-contato">
         <div class="grid">
