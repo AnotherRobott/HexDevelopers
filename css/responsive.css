@@ -172,6 +172,13 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
         display: flex !important;
     }
 
+    #logo-mobile{
+        background-color: rgb(250, 250, 250);
+        border: solid 5px rgb(250, 250, 250);
+        border-radius: 50px;
+        box-shadow: 0px 6px 10px -5px rgba(155, 155, 155, 0.5);
+    }
+
     .grid{
         display: flex;
         flex-wrap: wrap;
@@ -205,7 +212,7 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
         color: white;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
         text-align: justify;
-        font-size: 17pt;
+        font-size: 15pt;
         font-weight: 500;
     }
 }
