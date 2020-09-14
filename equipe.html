@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Equipe Hex</title>
 
     <!-- ICONE -->
-    <link rel="icon" type="image/png" href="img/logo.png"/>
-    
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- JS -->
+    <script type="text/javascript">
+
+    window.onload = Animation;
+    
+    function Animation(){
+
+        if(window.pageYOffset >= (document.getElementsByClassName("animated-title")[0].offsetTop - 700)){
+        // Animação do titulo
+        document.getElementsByClassName("animated-title")[0].style.transition = "all .5s";
+        document.getElementsByClassName("animated-title")[0].style.opacity = "100%";
+        document.getElementsByClassName("animated-title")[0].style.marginTop = "0em";
+
+        // Animação da Grid
+        document.getElementsByClassName("animated-grid")[0].style.transition = "opacity 1.5s";
+        document.getElementsByClassName("animated-grid")[0].style.opacity = "100%";
+    }
+    }
+    </script>
+
     <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="fixed"> 
+    <div id="fixed">
         <div class="container" id="container-navbar">
             <nav class="navbar" id="navbar">
                 <a href="index.html"><label class="nav-logo"><img src="img/logo.png" alt="">Hex Developers</label></a>
@@ -28,8 +50,8 @@
             </nav>
 
             <!-- Menu Mobile -->
-            <nav class="mobile-nav">
-                <a href="#"><label class="nav-logo"><img src="img/logo.png" id="logo-mobile"></label></a>   
+            <nav class="mobile-nav" style="margin-top: -5em;">
+                <a href="index.html"><label class="nav-logo"><img src="img/logo.png" id="logo-mobile"></label></a>
                 <input id="toggler" type='checkbox'>
                 <label for="toggler">
                     <div class='menu-mobile'>
@@ -41,10 +63,59 @@
                     <li><a href="sobre.html">Sobre</a></li><br />
                     <li><a href="equipe.html">Equipe</a></li><br />
                     <li><a href="contato.html">Contato</a></li>
-                </ul>
+                    </ul>
             </nav>
         </div>
     </div>
-    <br><br><br>
+
+    <div class="container container-equipe">
+        <div class="topo animated-title">
+            <img align="center" src="img/Artur.png" class="img-equipe">
+            <label class="text-lg nome-equipe">Artur Alves Ribeiro </label><small><b>Contato:</b> artur.alves@aluno.ifsp.edu.br</small>
+        </div>
+        <br><br>
+        <div class="curriculo animated-grid">
+            <h2>Escolaridade</h2>
+            <p>
+                <b>Inglês - Linguas</b> <br>
+                CNA - São João da Boa Vista - São João da Boa Vista, SP <br>
+                <small><i>Janeiro de 2020 a Dezembro de 2025</i></small>
+            </p>
+            <br>
+
+            <p>
+                <b>Ensino Superior cursando ou interrompido - Tecnologia</b> <br>
+                IFSP Campus São João da Boa Vista - São João da Boa Vista, SP <br>
+                <small><i>Janeiro de 2020 a Dezembro de 2023 </i></small>
+            </p>
+            <br>
+
+            <p>
+                <b>Ensino Técnico completo - Tecnologia</b> <br>
+                ETEC de Poá - Poá, SP <br>
+                <small><i>Junho de 2018 a Dezembro de 2019</i></small>
+            </p>
+            <br>
+
+            <p>
+                <b>Ensino Médio completo - Geral</b> <br>
+                E. E. Homero Fernando Milano - Itaquaquecetuba, SP <br>
+                <small><i>Janeiro de 2017 a Dezembro de 2019</i></small>
+            </p>
+            <br>
+
+            <h2>Habilidades e Competências</h2>
+
+            <p>Informática Intermediária</p>
+            <p>Trabalho em Equipe</p>
+            <p>Redes de Computadores Basico</p>
+            <p>Programação Web Intermediária</p>
+            <p>Programação Orientada a Objeto</p>
+            <p>Facipdade de Aprendizagem</p>
+            <p>Facipdade com Lógica</p>
+        </div>
+    </div>
+
 </body>
+
 </html>

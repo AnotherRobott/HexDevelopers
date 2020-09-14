@@ -304,6 +304,25 @@ input:checked ~ .ul-mobile {
         font-size: 15pt;
         font-weight: 500;
     }
+
+    /* Equipe */
+
+    .container-equipe{
+        padding-top: 5em;
+    }
+
+    .topo{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .img-equipe{
+        display: flex;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 572px){
