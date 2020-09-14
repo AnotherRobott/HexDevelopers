@@ -43,14 +43,4 @@ function AnimatedScroll() {
         document.getElementsByClassName("animated-grid")[0].style.transition = "opacity 1.5s";
         document.getElementsByClassName("animated-grid")[0].style.opacity = "100%";
     }
-
-
-    if(window.pageYOffset >= 90){
-        document.getElementById('toggler').style.transition = "all .2s";
-        document.getElementById('toggler').style.color = "grey";
-    }else{
-        document.getElementById('toggler').style.color = "white";
-    }
-
-    
 }
