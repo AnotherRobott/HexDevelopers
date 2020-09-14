@@ -186,7 +186,7 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
     background: grey;
     content: "";
     display: block;
-    transition: .5s ease-in-out;
+    transition: .1s ease-in-out;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -220,6 +220,29 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
 #toggler:checked ~ label .hamburger:before {
     transform: rotate(90deg);
     top: 0;
+}
+
+input:checked ~ .ul-mobile {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ul-mobile li a{
+    text-decoration: none;
+}
+
+.ul-mobile{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 51%);
+    list-style: none;
+    font-size: 30pt;
+    opacity: 0;
+    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
+    visibility: hidden;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 768px){
