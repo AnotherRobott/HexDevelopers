@@ -19,7 +19,7 @@ function Animation(){
 }
 
 function AnimatedScroll() {
-    console.log(window.pageYOffset)
+    // console.log(window.pageYOffset)
 
     if(window.pageYOffset >= 500){
         document.getElementById('fixed').style.transition = "all .3s";
@@ -32,15 +32,21 @@ function AnimatedScroll() {
 
     // Animação de Grid e Title
     // alert(document.getElementsByClassName("animated-title")[0].offsetTop);
-    if(window.pageYOffset >= (document.getElementsByClassName("animated-title")[0].offsetTop - 700)){
+
+    var grids = document.getElementsByClassName("animated-title").length;
+
+    for (i = 0; i < grids; i++) {
+    
+    if(window.pageYOffset >= (document.getElementsByClassName("animated-title")[i].offsetTop - 700)){
 
         // Animação do titulo
-        document.getElementsByClassName("animated-title")[0].style.transition = "all .5s";
-        document.getElementsByClassName("animated-title")[0].style.opacity = "100%";
-        document.getElementsByClassName("animated-title")[0].style.marginLeft = "0em";
+        document.getElementsByClassName("animated-title")[i].style.transition = "all .5s";
+        document.getElementsByClassName("animated-title")[i].style.opacity = "100%";
+        document.getElementsByClassName("animated-title")[i].style.marginLeft = "0em";
 
         // Animação da Grid
-        document.getElementsByClassName("animated-grid")[0].style.transition = "opacity 1.5s";
-        document.getElementsByClassName("animated-grid")[0].style.opacity = "100%";
+        document.getElementsByClassName("animated-grid")[i].style.transition = "opacity 1.5s";
+        document.getElementsByClassName("animated-grid")[i].style.opacity = "100%";
+    }
     }
 }

@@ -89,7 +89,7 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
 }
 
 .text-md{
-    font-size: 20pt;
+    font-size: 25pt;
 }
 
 .text-lg{
@@ -149,12 +149,27 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
         font-size: 9pt;
     }
 }
+
+@media only screen and (max-width: 1184px){
+
+    #txt-saudacoes{
+        font-size: 17pt;
+    }
+
+    .saudacoes button{
+        font-size: 10pt;
+        box-shadow: 0px 10px 10px -10px rgba(0, 255, 0, 0.671);
+    }
+
+}
+
+
+
 /* INICIO DA PARTE MOBILE  */
 
 .mobile-nav{
     display: none;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-right: .5em;
     padding-top: 1em;
     justify-content: space-between;
 }
@@ -261,11 +276,11 @@ input:checked ~ .ul-mobile {
     }
 
     #logo-mobile{
-        background-color: rgb(250, 250, 250);
-        border: solid 5px rgb(250, 250, 250);
+        background-color: rgb(255, 255, 255);
+        border: solid 5px rgb(255, 255, 255);
         border-radius: 50px;
-        max-width: 55px;
-        box-shadow: 0px 6px 10px -5px rgba(115, 255, 0, 0.24);
+        max-width: 50px;
+        box-shadow: 0px 6px 10px -5px rgba(96, 255, 173, 0.377);
     }
 
     .grid{

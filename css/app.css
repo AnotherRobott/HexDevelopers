@@ -108,10 +108,9 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
 }
 
 .grid-mvv .col{
-    border: solid 1px rgb(245, 245, 245);
     /* background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(140,255,129,1) 100%); */
     background-color:  rgba(96,255,173,1);
-    box-shadow: 0px 30px 20px -30px #8cff81;
+    box-shadow: 0px 26px 15px -25px  rgba(96,255,173,1);
     border-radius: 20px;
     margin-bottom: 3em;
     margin-top: 3em;
@@ -136,6 +135,15 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
 }
 
+/* Aplicativos */
+
+.desc-app{
+    color: grey;
+    font-weight: 100;
+    text-align: justify;
+    font-size: 20pt;
+    vertical-align: middle;
+}
 
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* Pagina de sobre */
@@ -217,24 +225,12 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     border: 0;
     box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
     height: 40px;
-    width: 400px;
+    width: 100%;
     border-radius: 100px;
     padding-left: 1.5em;
     font-size: 12pt;
     margin-bottom: 1em;
-}
-
-.container-contato textarea{
-    border: 0;
-    box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
-    height: 200px;
-    width: 400px;
-    max-width: 400px;
-    border-radius: 30px;
-    padding: 1.5em;
-    font-size: 12pt;
-    margin-bottom: 2em;
-    resize: vertical;
+    margin-right: -2em;
 }
 
 .container-contato textarea{
@@ -242,8 +238,8 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     border: 0;
     box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
     height: 200px;
-    width: 400px;
-    max-width: 400px;
+    width: 100%;
+    max-width: 380px;
     border-radius: 30px;
     padding: 1.5em;
     font-size: 12pt;
@@ -262,4 +258,59 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     text-shadow: 2px 2px 4px rgba(58, 58, 58, 0.233);
     box-shadow: 0px 20px 10px -20px rgba(0, 255, 0, 0.671);
     cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer{
+    margin-top: 10em;
+    padding: 1em;
+    color: gray;
+    background-color:rgba(96,255,173,1);
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.col-logo{
+    text-align: center;
+}
+
+.col-menus ul{
+    list-style: none;
+}
+
+.col-menus ul li{
+    text-align: center;
+}
+
+.col-menus ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: 700 !important;
+}
+
+.col-social ul{
+    list-style: none;
+}
+
+.col-social ul li{
+    text-align: center;
+}
+
+.col-social ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: 700 !important;
+}
+
+.col-contato{
+    text-align: center;
+}
+
+.footer img{
+    max-width: 100px;
+    filter: brightness(300%);
 }
