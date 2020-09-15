@@ -118,7 +118,7 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
 }
 
 .grid-mvv .col:hover{
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 
 .grid-mvv .col h3{
@@ -133,16 +133,19 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     text-align: justify;
     font-size: 17pt;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+    padding: 1em;
 }
 
 /* Aplicativos */
 
-.desc-app{
-    color: grey;
-    font-weight: 100;
-    text-align: justify;
-    font-size: 20pt;
-    vertical-align: middle;
+.img-notes{
+    max-width: 100%; 
+    display: flex;
+    transition: all .2s ease-in-out;
+}
+
+.img-notes:hover{
+    transform: scale(1.03);
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
@@ -263,10 +266,11 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
 /* FOOTER */
 
 .footer{
-    margin-top: 10em;
+    margin-top: 20em;
     padding: 1em;
     color: gray;
-    background-color:rgba(96,255,173,1);
+    /* background-color:rgba(96,255,173,1); */
+    background-color:rgb(226, 226, 226);
     color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
