@@ -47,13 +47,13 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .row{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .col{
@@ -272,6 +272,12 @@ input:checked ~ .ul-mobile {
     }
 
     .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .row{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;

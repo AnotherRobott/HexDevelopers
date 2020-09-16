@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Inicio</title>
 
     <!-- ICONE -->
-    <link rel="icon" type="image/png" href="img/logo.png"/>
-    
+    <link rel="icon" type="image/png" href="img/logo.png" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/responsive.css">
     <style>
-        body{background-image: url("img/bg-theme.png"); background-size: 100%; background-repeat: no-repeat;}
+        body {
+            background-image: url("img/bg-theme.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
     </style>
 
     <!-- JS -->
@@ -21,8 +26,9 @@
     <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="fixed"> 
+    <div id="fixed">
         <div class="container" id="container-navbar">
             <nav class="navbar" id="navbar">
                 <a href="#"><label class="nav-logo"><img src="img/logo.png" alt="">Hex Developers</label></a>
@@ -35,7 +41,7 @@
 
             <!-- Menu Mobile -->
             <nav class="mobile-nav">
-                <a href="#"><label class="nav-logo"><img src="img/logo.png" id="logo-mobile"></label></a>   
+                <a href="#"><label class="nav-logo"><img src="img/logo.png" id="logo-mobile"></label></a>
                 <input id="toggler" type='checkbox'>
                 <label for="toggler">
                     <div class='menu-mobile'>
@@ -47,25 +53,29 @@
                     <li><a href="sobre.html">Sobre</a></li><br />
                     <li><a href="equipe.html">Equipe</a></li><br />
                     <li><a href="contato.html">Contato</a></li>
-                </ul>
+                    </ul>
             </nav>
         </div>
     </div>
 
-    
+
     <br><br>
     <div class="container home">
         <div class="grid saudacoes">
-            <div class="col" style="vertical-align: middle; ">
-                <p class="text-lg" id="txt-saudacoes">
-                    Bem vindo ao <b>Hex</b>, aqui, criamos e desenvolvemos sites e aplicativos, para <b>melhorar</b> seu negócio e o seu dia a dia <br />
+            <div class="row">
+                <div class="col" style="vertical-align: middle; ">
+                    <p class="text-lg" id="txt-saudacoes">
+                        Bem vindo ao <b>Hex</b>, aqui, criamos e desenvolvemos sites e aplicativos, para <b>melhorar</b>
+                        seu negócio e o seu dia a dia <br />
 
-                    <center><button class="text-sm" onclick="window.location.href='sobre.html'">Saiba Mais</button></center>
-                </p>
-            </div>
-            <div class="col"></div>
-            <div class="col">
-                <img src="img/pessoa.png" id="img-saudacoes" style="max-width: 100%; ">
+                        <center><button class="text-sm" onclick="window.location.href='sobre.html'">Saiba Mais</button>
+                        </center>
+                    </p>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <img src="img/pessoa.png" id="img-saudacoes" style="max-width: 100%; ">
+                </div>
             </div>
         </div>
     </div>
@@ -75,26 +85,41 @@
             Missão, visão e valores
         </h3>
         <div class="grid grid-mvv animated-grid">
-            <div class="col">
-                <h3>Missão</h3>
-                <p>
-                    Nossa missão é criar e desenvolver sites e aplicativos capases de  melhorar e facilitar o uso de ferramentas do dia a dia
-                </p>
+            <div class="row">
+                <div class="col">
+                    <h3>Missão</h3>
+                    <p>
+                        Nossa missão é criar e desenvolver sites e aplicativos capases de melhorar e facilitar o uso de
+                        ferramentas do dia a dia
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Visão</h3>
+                    <p>
+                        Nossa visão é alcançar o mais amplo número de clientes para que todos sites e aplicativos web
+                        tenham uma ótima aparencia e funcionalidade
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>Valores</h3>
+                    <p>
+                        Nossos valores são entregar sempre projetos de alto nível, independente do tamanho de nossos
+                        clientes.
+                    </p>
+                </div>
             </div>
-            <div class="col">
-                <h3>Visão</h3>
-                <p>
-                    Nossa visão é alcançar o mais amplo número de clientes para que todos sites e aplicativos web tenham uma ótima aparencia e funcionalidade
-                </p>
-            </div>
-            <div class="col">
-                <h3>Valores</h3>
-                <p>
-                    Nossos valores são entregar sempre projetos de alto nível, independente do tamanho de nossos clientes.
+            <div class="row">
+                <p class="text-sm" style="color: rgb(177, 177, 177); font-size: 18pt; text-align: justify;">
+                    A Hex surgiu em 2020 no período em que o mundo estava passando por uma pandemia, sendo assim, criada
+                    com o intuito de ajudar comércios e empresas que necessitavam de alternativas remotas ou online para
+                    seus negócios.<br /><br />
+                    Criada por <a href="#"><b>Artur Alves Ribeiro</b></a>, hoje ela atende a todo o Brasil, com inúmeros
+                    sistemas rodando pela internet, sempre intuitivos e simples de usar, sendo ainda moderno o bonito,
+                    agradável a todos os usuários. <br /><br />
                 </p>
             </div>
         </div>
-        
+
         <h3 class="text-md animated-title" style="margin-top: 2em;">
             Alguns de nossos projetos
         </h3>
@@ -107,7 +132,7 @@
             </div>
             <div class="col"></div>
         </div>
-        
+
     </div>
 
     <!-- FOOTER -->
@@ -143,6 +168,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
