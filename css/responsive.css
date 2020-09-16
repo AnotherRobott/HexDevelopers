@@ -12,16 +12,6 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
     float: left !important;
 }
 
-.active{
-    color: #73ff9b;
-    text-shadow: 1px 1px 3px rgba(60, 255, 0, 0.342);
-    transition: color .3s;
-}
-
-.active:hover{
-    color: #63e663 !important;
-}
-
 #fixed{
     width: 100%;
     z-index: 100;
@@ -43,13 +33,12 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
     margin-left: auto;
     margin-right: auto;
 }
+
 @media only screen and (max-width: 1020px){
     .container{
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
     }
-
-    /* .saudacoes img{display: none;} */
 }
 
 /* GRID */
@@ -178,12 +167,11 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
     background: #FFF;
     border-radius: 50%;
     bottom: 25px;
-    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
     cursor: pointer;
     height: 60px;
     transition:  box-shadow .8s cubic-bezier(.19,1,.22,1);
     width: 60px;
-    z-index: 1100;
+    z-index: 2;
     box-shadow: 0px 6px 10px -5px rgba(201, 201, 201, 0.24);
 }
 
@@ -280,7 +268,7 @@ input:checked ~ .ul-mobile {
         border: solid 5px rgb(255, 255, 255);
         border-radius: 50px;
         max-width: 50px;
-        box-shadow: 0px 6px 10px -5px rgba(96, 255, 173, 0.377);
+        box-shadow: 0px 6px 10px -5px rgba(201, 201, 201, 0.24);
     }
 
     .grid{
