@@ -4,20 +4,53 @@ Esse CSS contém todos os estilos de todas as paginas, sendo eles aqueles idepen
 
  Confiugurações gerais
 */
-*{outline:none ;}
-body{background-color: rgb(250, 250, 250);font-family: 'Quicksand', sans-serif; outline-color: transparent;margin: 0; overflow-x: hidden !important;}
-a{color: rgb(134, 134, 134);font-weight: 100 !important;}
+* {
+    outline: none;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    font-family: 'Quicksand', sans-serif;
+    outline-color: transparent;
+    margin: 0;
+    overflow-x: hidden !important;
+}
+
+a {
+    color: rgb(134, 134, 134);
+    font-weight: 100 !important;
+}
 
 
-::-webkit-scrollbar {width: 8px; height: 8px;}
-::-webkit-scrollbar-button {width: 0px; height: 0px;}
-::-webkit-scrollbar-thumb {background: #ececec; border-radius: 50px; padding: .1em; border: 1px solid #ffffff;}
-::-webkit-scrollbar-thumb:hover {background: #dadada;}
-::-webkit-scrollbar-track {background: #00000000; border-radius: 50px;}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ececec;
+    border-radius: 50px;
+    padding: .1em;
+    border: 1px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dadada;
+}
+
+::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 50px;
+}
 
 /* Nav que contém todo o conteúdo dos menus */
 
-.navbar{
+.navbar {
     margin: 1em;
     background: white;
     box-shadow: 0px 20px 10px -20px rgba(231, 231, 231, 0.815);
@@ -25,7 +58,7 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     border-radius: 20px;
 }
 
-.nav-logo{
+.nav-logo {
     position: absolute;
     font-size: 20pt;
     font-weight: 100 !important;
@@ -33,53 +66,64 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     cursor: pointer;
 }
 
-.nav-logo img{
+.nav-logo img {
     max-width: 40px;
     margin-right: 10px;
     margin-bottom: -11px;
     margin-top: -10px;
 }
 
-.nav-menu li{
+.nav-menu li {
     display: inline;
     margin-right: 20px;
 }
 
-.nav-menu li a{
+.nav-menu li a {
     transition: color .1s;
     text-decoration: none;
     font-size: 16pt;
 }
 
-.nav-menu li a:hover{
+.nav-menu li a:hover {
     color: rgb(0, 0, 0);
 }
 
 
 
 /* Parte inicial do site */
-
-#img-saudacoes{
-    max-width: 90% !important;
+.home {
+    margin-top: 2em;
 }
-.saudacoes button{
+
+#img-saudacoes {
+    margin: 0px auto;
+    max-width: 35vw;
+}
+
+#txt-saudacoes {
+    color: rgb(134, 134, 134);
+    padding-top: 2.5em;
+    max-width: 30ch;
+}
+
+.saudacoes button {
     border: 0;
     border-radius: 100px;
-    background: rgb(96,255,173);
-    background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(140,255,129,1) 100%);
+    background: rgb(96, 255, 173);
+    background: linear-gradient(270deg, rgba(96, 255, 173, 1) 0%, rgba(140, 255, 129, 1) 100%);
     color: rgb(255, 255, 255);
     padding: .8em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.103);
     box-shadow: 0px 20px 10px -20px rgba(0, 255, 0, 0.671);
     cursor: pointer;
-    transition: font-size .2s;
+    transition: .2s ease-in-out;
 }
 
-.saudacoes button:hover{
-    font-size: 15.5pt;
+.saudacoes button:hover {
+    transform: scale(1.05);
 }
 
-.saudacoes .text-lg{
+.saudacoes .text-lg {
     text-align: justify;
     position: relative;
     margin-top: 20%;
@@ -92,43 +136,43 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
 
 /* Corpo */
 
-.corpo{
-    margin-top: 200px;
+.corpo {
+    margin-top: 100px;
 }
 
-.corpo .text-md{
+.corpo .text-md {
     color: grey;
     margin-left: -5em;
     opacity: 0%;
 }
 
-.grid-mvv{
+.grid-mvv {
     opacity: 0%;
 }
 
-.grid-mvv .col{
+.grid-mvv .col {
     /* background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(140,255,129,1) 100%); */
-    background-color:  rgba(96,255,173,1);
-    box-shadow: 0px 26px 15px -25px  rgba(96,255,173,1);
+    background-color: rgba(96, 255, 173, 1);
+    box-shadow: 0px 26px 15px -25px rgba(96, 255, 173, 1);
     border-radius: 20px;
     margin-bottom: 3em;
     margin-top: 3em;
     transition: all .1s ease-in-out;
 }
 
-.grid-mvv .col:hover{
+.grid-mvv .col:hover {
     transform: scale(1.03);
 }
 
-.grid-mvv .col h3{
-    color:rgb(255, 255, 255);
+.grid-mvv .col h3 {
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 17pt;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
 }
 
-.grid-mvv .col p{
-    color:rgb(255, 255, 255);
+.grid-mvv .col p {
+    color: rgb(255, 255, 255);
     text-align: justify;
     font-size: 17pt;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
@@ -137,40 +181,40 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
 
 /* Aplicativos */
 
-.img-notes{
-    max-width: 100%; 
+.img-notes {
+    max-width: 100%;
     display: flex;
     transition: all .2s ease-in-out;
 }
 
-.img-notes:hover{
+.img-notes:hover {
     transform: scale(1.03);
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Pagina de sobre */
 
-.container-sobre{
+.container-sobre {
     padding: 3em;
     z-index: 1 !important;
 }
 
-.container-sobre .text-md{
- color: rgb(73, 73, 73);
- margin-top: 2em;
+.container-sobre .text-md {
+    color: rgb(73, 73, 73);
+    margin-top: 2em;
 }
 
-.container-sobre .text-sm{
+.container-sobre .text-sm {
     color: grey;
     text-align: justify;
 }
 
-.container-sobre .text-sm a{
+.container-sobre .text-sm a {
     color: grey;
     text-decoration: none;
 }
 
-.container-sobre .text-sm img{
+.container-sobre .text-sm img {
     max-width: 300px;
     border: grey;
     background-color: white;
@@ -183,28 +227,28 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
 /* +=============================================================================================================================+ */
 /* Area da pagina de Equipe */
 
-.container-equipe{
+.container-equipe {
     margin-top: 5em;
     margin-bottom: 5em;
 }
 
-.topo small{
+.topo small {
     color: rgb(80, 165, 0);
 }
 
-.img-equipe{
-    border-radius: 100%; 
+.img-equipe {
+    border-radius: 100%;
     max-width: 150px;
     box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.377);
     margin-top: -2em;
 }
 
-.nome-equipe{
+.nome-equipe {
     color: grey;
     margin-left: 1em;
 }
 
-.curriculo{
+.curriculo {
     padding: 2em;
     background-color: white;
     box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
@@ -215,7 +259,7 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
 /* +=============================================================================================================================+ */
 /* Area da pagina de Contato */
 
-.container-contato{
+.container-contato {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -224,12 +268,12 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     margin-bottom: 20em;
 }
 
-.form-contato{
+.form-contato {
     max-width: 500px;
     width: 80vw;
 }
 
-.container-contato label{
+.container-contato label {
     position: relative;
     left: 1.5em;
     top: .7em;
@@ -238,7 +282,7 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     color: grey;
 }
 
-.container-contato input{
+.container-contato input {
     border: 0;
     box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
     height: 40px;
@@ -249,7 +293,7 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     margin-bottom: 1em;
 }
 
-.container-contato textarea{
+.container-contato textarea {
     font-family: 'Quicksand', sans-serif;
     border: 0;
     box-shadow: 0px 20px 10px -20px rgba(0, 0, 0, 0.151);
@@ -259,15 +303,15 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
     padding: 1.5em;
     font-size: 12pt;
     margin-bottom: 2em;
-    resize: vertical;
+    resize: none;
 }
 
-.container-contato button{
+.container-contato button {
     border: 0;
     border-radius: 100px;
     font-size: 13pt;
-    background: rgb(96,255,173);
-    background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(140,255,129,1) 100%);
+    background: rgb(96, 255, 173);
+    background: linear-gradient(270deg, rgba(96, 255, 173, 1) 0%, rgba(140, 255, 129, 1) 100%);
     color: rgb(255, 255, 255);
     padding: .7em;
     text-shadow: 2px 2px 4px rgba(58, 58, 58, 0.233);
@@ -278,58 +322,58 @@ a{color: rgb(134, 134, 134);font-weight: 100 !important;}
 /* =================================================================================================== */
 /* FOOTER */
 
-.footer{
+.footer {
     margin-top: 15em;
     padding: 1em;
     color: gray;
     /* background-color:rgba(96,255,173,1); */
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: 0px -20px 10px -20px rgba(209, 209, 209, 0.377);
 }
 
-.col-logo{
+.col-logo {
     text-align: center;
 }
 
-.col-menus ul{
+.col-menus ul {
     list-style: none;
     padding: 0em;
 }
 
-.col-menus ul li{
+.col-menus ul li {
     text-align: center;
 }
 
-.col-menus ul li a{
+.col-menus ul li a {
     color: grey;
     text-decoration: none;
     font-size: 15pt;
     font-weight: 700 !important;
 }
 
-.col-social ul{
+.col-social ul {
     list-style: none;
     padding: 0em;
 }
 
-.col-social ul li{
+.col-social ul li {
     text-align: center;
 }
 
-.col-social ul li a{
+.col-social ul li a {
     color: grey;
     text-decoration: none;
     font-size: 15pt;
     font-weight: 700 !important;
 }
 
-.col-contato{
+.col-contato {
     text-align: center;
 }
 
-.footer img{
+.footer img {
     max-width: 100px;
     filter: brightness(70%) grayscale(100%);
 }

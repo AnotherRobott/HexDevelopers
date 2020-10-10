@@ -4,38 +4,38 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
 
 */
 
-.fl-r{
+.fl-r {
     float: right !important;
 }
 
-.fl-l{
+.fl-l {
     float: left !important;
 }
 
-#fixed{
+#fixed {
     width: 100%;
     z-index: 100;
 }
 
-.animated-grid{
+.animated-grid {
     opacity: 0%;
 }
 
-.animated-title{
+.animated-title {
     opacity: 0%;
     margin-top: -5em;
 }
 
 /* Container que comanda o tamanho do conteúdo exibido */
-.container{
+.container {
     padding-left: 10em;
     padding-right: 10em;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media only screen and (max-width: 1020px){
-    .container{
+@media only screen and (max-width: 1020px) {
+    .container {
         padding-left: 1em !important;
         padding-right: 1em !important;
     }
@@ -43,20 +43,21 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
 
 /* GRID */
 
-.grid{
+.grid {
     display: flex;
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
 }
 
-.row{
+.row {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-grow: 0;
 }
 
-.col{
+.col {
     min-width: auto;
     position: relative;
     max-width: 100%;
@@ -65,6 +66,7 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
     border-radius: 20px;
     padding: 1em;
     margin-right: 1em;
+    overflow: hidden;
     /* background: rgb(96,255,173);
     background: linear-gradient(270deg, rgba(96,255,173,1) 0%, rgba(230,255,123,1) 100%); */
 }
@@ -73,79 +75,79 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
 
 /* TEXTOS */
 
-.text-sm{
+.text-sm {
     font-size: 15pt;
 }
 
-.text-md{
+.text-md {
     font-size: 25pt;
 }
 
-.text-lg{
+.text-lg {
     font-size: 30pt;
 }
 
 
 
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1440px) {
 
-    .text-sm{
+    .text-sm {
         font-size: 15pt;
         z-index: 1;
     }
 
-    .text-md{
+    .text-md {
         font-size: 15pt;
         z-index: 1;
     }
-    
-    .text-lg{
+
+    .text-lg {
         font-size: 22pt;
         z-index: 1;
     }
 
     /* NAVBAR Ajustes */
 
-    .navbar{
+    .navbar {
         max-height: 30px;
     }
 
-    .navbar ul{
+    .navbar ul {
         margin-top: .25em;
     }
 
-    .navbar a label{
+    .navbar a label {
         margin-top: -.5em !important;
         font-size: 13pt;
         margin-top: 5px;
     }
 
-    .navbar img{
+    .navbar img {
         max-width: 32px;
     }
 
-    .navbar li a{
+    .navbar li a {
         font-size: 13pt;
     }
 
     /* Missão visão e valores */
 
-    .grid-mvv .col h3{
+    .grid-mvv .col h3 {
         font-size: 11pt;
     }
-    
-    .grid-mvv .col p{
+
+    .grid-mvv .col p {
         font-size: 9pt;
     }
 }
 
-@media only screen and (max-width: 1184px){
+@media only screen and (max-width: 1184px) {
 
-    #txt-saudacoes{
+    #txt-saudacoes {
         font-size: 17pt;
     }
 
-    .saudacoes button{
+    .saudacoes button {
         font-size: 10pt;
         box-shadow: 0px 10px 10px -10px rgba(0, 255, 0, 0.671);
     }
@@ -156,7 +158,7 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
 
 /* INICIO DA PARTE MOBILE  */
 
-.mobile-nav{
+.mobile-nav {
     display: none;
     padding-right: .5em;
     padding-top: 1em;
@@ -169,7 +171,7 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
     bottom: 25px;
     cursor: pointer;
     height: 60px;
-    transition:  box-shadow .8s cubic-bezier(.19,1,.22,1);
+    transition: box-shadow .8s cubic-bezier(.19, 1, .22, 1);
     width: 60px;
     z-index: 2;
     box-shadow: 0px 6px 10px -5px rgba(201, 201, 201, 0.24);
@@ -210,60 +212,66 @@ Esse Css contém predefinições e alterações responsivas das paginas e seus o
     display: none;
 }
 
-#toggler:checked ~ label .menu-mobile {
+#toggler:checked~label .menu-mobile {
     box-shadow: 0 0 0 130vw #FFF, 0 0 0 130vh #FFF;
 }
 
-#toggler:checked ~ label .hamburger {
+#toggler:checked~label .hamburger {
     transform: rotate(45deg);
 }
 
-#toggler:checked ~ label .hamburger:after {
+#toggler:checked~label .hamburger:after {
     transform: rotate(90deg);
     bottom: 0;
 }
 
-#toggler:checked ~ label .hamburger:before {
+#toggler:checked~label .hamburger:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-input:checked ~ .ul-mobile {
+input:checked~.ul-mobile {
     opacity: 1;
     visibility: visible;
 }
 
-.ul-mobile li a{
+.ul-mobile li a {
     text-decoration: none;
 }
 
-.ul-mobile{
+.ul-mobile li {
+    padding-bottom: 1.5em;
+}
+
+.ul-mobile {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
-    font-size: 30pt;
+    font-size: 5vh;
     opacity: 0;
     transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
     visibility: hidden;
     z-index: 1100;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px) {
 
-    #fixed{
+    #fixed {
         position: fixed !important;
     }
-    .navbar{
+
+    .navbar {
         display: none;
     }
-    .mobile-nav{
+
+    .mobile-nav {
         display: flex !important;
     }
 
-    #logo-mobile{
+    #logo-mobile {
         background-color: rgb(255, 255, 255);
         border: solid 5px rgb(255, 255, 255);
         border-radius: 50px;
@@ -271,59 +279,70 @@ input:checked ~ .ul-mobile {
         box-shadow: 0px 6px 10px -5px rgba(201, 201, 201, 0.24);
     }
 
-    .grid{
+    .grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .row{
+    .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .saudacoes{
+    .saudacoes {
         margin-top: 3em;
         display: flex;
         justify-content: center;
         justify-content: space-around;
     }
 
-    .saudacoes .row{
+    .saudacoes .row {
         flex-wrap: wrap-reverse;
+    }
+
+    #img-saudacoes {
+        max-width: 100% !important;
+        margin-bottom: -8vh;
+    }
+
+    #txt-saudacoes {
+        padding-top: 0em;
+        font-size: 3.5vh !important;
+        text-align: justify;
     }
 
     /* MVV Mobile */
 
-    .grid-mvv .col{
+    .grid-mvv .col {
         margin-right: 0em !important;
         margin-top: 0em !important;
         width: 100%;
     }
 
-    .grid-mvv .col h3{
+    .grid-mvv .col h3 {
         text-align: center;
         font-size: 20pt;
     }
-    
-    .grid-mvv .col p{
+
+    .grid-mvv .col p {
         text-align: justify;
         font-size: 15pt;
     }
 
     /* Equipe */
 
-    .container-equipe{
+    .container-equipe {
         padding-top: 5em;
     }
 
-    .topo{
+    .topo {
         justify-content: center;
         text-align: center;
     }
 
-    .img-equipe{
+    .img-equipe {
         display: flex;
         position: relative;
         left: 50%;
@@ -332,20 +351,17 @@ input:checked ~ .ul-mobile {
     }
 }
 
-@media only screen and (max-width: 572px){
-    #txt-saudacoes{
-        font-size: 14pt;
-    }
+@media only screen and (max-width: 572px) {
 
-    #txt-saudacoes button{
+    #txt-saudacoes button {
         font-size: 10pt;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.103);
         box-shadow: 0px 12px 10px -11px rgba(0, 255, 0, 0.671);
     }
 }
 
-@media only screen and (max-width: 425px){
-    .nav-menu-toggler{
+@media only screen and (max-width: 425px) {
+    .nav-menu-toggler {
         display: block !important;
     }
 }
