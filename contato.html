@@ -49,25 +49,34 @@
     </div>
     <br><br><br><br><br><br>
 
-    <div class="container-contato">
-        <div class="form-contato">
-            <form action="">
-                <label for="email">Nome</label><br />
-                <input type="text" name="nome" id="nome" autocomplete="off"><br />
+    <div class="container container-contato">
+        <form method="post" onsubmit="validaForm(this);" class="form-contato">
+            <label for="email">Nome</label><br />
+            <div class="input" id="nome">
+                <input type="text" name="nome" autocomplete="off"><br />
+            </div>
 
-                <label for="email">Email</label><br />
-                <input type="email" name="email" id="email" autocomplete="off"><br />
+            <label for="email">Email</label><br />
+            <div class="input" id="email">
+                <input type="email" name="email" autocomplete="off"><br />
+            </div>
 
-                <label for="email">Mensagem</label><br />
-                <textarea name="mensagem" id="msg" placeholder="Digite aqui sua mensagem para nós!"></textarea> <br />
+            <label for="Tel">Telefone</label><br />
+            <div class="input">
+                <input type="tel" id="tel" name="Tel" autocomplete="off" maxlength="9"><br />
+            </div>
 
-                <center><button type="submit">Enviar</button></center>
-            </form>
-        </div>
+            <label for="email">Mensagem</label><br />
+            <div class="input" id="msg">
+                <textarea name="mensagem" placeholder="Digite aqui sua mensagem para nós!"></textarea> <br />
+            </div>
+
+            <center><button type="submit">Enviar</button></center>
+        </form>
     </div>
 
     <!-- FOOTER -->
-    <div class="footer" style="margin-top: 80vh !important;">
+    <!-- <div class="footer" style="margin-top: 80vh !important;">
         <div class="container">
             <div class="grid">
                 <div class="col text-md col-logo">
@@ -98,7 +107,28 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <script type="text/javascript">
+        function validaForm(form) {
+
+            if (form.nome.value === "") {
+                alert("O campo de nome é obrigatório. Preencha para continuar");
+            }
+
+            if (form.email.value === "") {
+                alert("O campo de nome é obrigatório. Preencha para continuar");
+            }
+
+            if (form.nome.value === "") {
+                alert("O campo de nome é obrigatório. Preencha para continuar");
+            }
+
+            if (form.nome.value === "") {
+                alert("O campo de nome é obrigatório. Preencha para continuar");
+            }
+        }
+    </script>
 </body>
 
 </html>
